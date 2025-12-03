@@ -14,8 +14,8 @@ markdown_extensions:
   - admonition
   - toc:
       permalink: true
-  - markdown_include.include
   - pymdownx.escapeall
+
 
 nav:
   - Home: index.md
