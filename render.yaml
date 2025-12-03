@@ -2,14 +2,10 @@ services:
   - type: web
     name: documentation-explorer
     env: static
-    staticPublishPath: ./docs
+    buildCommand: pip install -r requirements.txt && mkdocs build
+    staticPublishPath: ./site
     routes:
       - type: rewrite
         source: /
-        destination: /viewer/app.html
-      - type: rewrite
-        source: /app.html
-        destination: /viewer/app.html
-      - type: rewrite
-        source: /*
-        destination: /viewer/app.html
+        destination: /index.html
+
