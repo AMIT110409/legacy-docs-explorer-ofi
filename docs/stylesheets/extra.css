@@ -1,0 +1,106 @@
+/* Ultra Premium Direct Brand Customization */
+
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Brand Color Variables */
+:root {
+    --upd-primary-dark: #3C3228;
+    --upd-background: #FFFAF5;
+    --upd-accent-purple: #6B4C9A;
+    --upd-text-light: #FFFAF5;
+}
+
+/* Override Material theme colors */
+[data-md-color-scheme="default"] {
+    --md-primary-fg-color: var(--upd-accent-purple);
+    --md-primary-fg-color--light: #8B6CBA;
+    --md-primary-fg-color--dark: #4B2C7A;
+    --md-accent-fg-color: var(--upd-primary-dark);
+    --md-default-bg-color: var(--upd-background);
+}
+
+/* Custom button styling */
+.md-button {
+    background-color: var(--upd-primary-dark);
+    color: var(--upd-text-light);
+    border-radius: 8px;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.md-button:hover {
+    background-color: var(--upd-accent-purple);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(107, 76, 154, 0.3);
+}
+
+.md-button--primary {
+    background-color: var(--upd-accent-purple);
+    color: var(--upd-text-light);
+}
+
+.md-button--primary:hover {
+    background-color: var(--upd-primary-dark);
+}
+
+/* Typography */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Header styling */
+.md-header {
+    background-color: var(--upd-primary-dark);
+}
+
+/* Link colors */
+a {
+    color: var(--upd-accent-purple);
+}
+
+a:hover {
+    color: var(--upd-primary-dark);
+}
+
+/* Card styling for content */
+.md-content__inner {
+    background-color: var(--upd-background);
+}
+
+/* Navigation styling */
+.md-nav__link--active {
+    color: var(--upd-accent-purple);
+    font-weight: 600;
+}
+
+.md-nav__link:hover {
+    color: var(--upd-accent-purple);
+}
+
+/* Search box */
+.md-search__input {
+    background-color: rgba(255, 250, 245, 0.1);
+    border-radius: 8px;
+}
+
+.md-search__input:focus {
+    border-color: var(--upd-accent-purple);
+}
+
+/* Code blocks */
+.md-typeset code {
+    background-color: rgba(60, 50, 40, 0.05);
+    border-radius: 4px;
+}
+
+/* Tables */
+.md-typeset table:not([class]) {
+    border: 1px solid rgba(60, 50, 40, 0.1);
+}
+
+.md-typeset table:not([class]) th {
+    background-color: var(--upd-primary-dark);
+    color: var(--upd-text-light);
+}

@@ -3,9 +3,14 @@ site_description: Auto-generated documentation for multi-repo legacy systems
 site_url: ""
 # Force fresh build
 
-
 theme:
   name: material
+  palette:
+    primary: deep purple
+    accent: brown
+  font:
+    text: Poppins
+    code: Roboto Mono
   features:
     - navigation.sections
     - navigation.instant
@@ -26,4 +31,8 @@ nav:
 
 extra:
   generator: "Codebase Documentation Generator"
+
+extra_css:
+  - stylesheets/extra.css
+
 
