@@ -13,9 +13,14 @@ theme:
     code: Roboto Mono
   features:
     - navigation.sections
+    - navigation.expand
     - navigation.instant
     - navigation.top
     - navigation.indexes
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - toc.integrate
     - content.code.copy
 
 markdown_extensions:
@@ -38,6 +43,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/extra.js
+
 
 
 
